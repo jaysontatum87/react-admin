@@ -33,7 +33,9 @@
         "babel-loader": "8.0.6",
         "babel-plugin-named-asset-import": "^0.3.4",
         "babel-preset-react-app": "^9.0.2",
+        "browserslist": "^4.16.8",
         "camelcase": "^5.2.0",
+        "caniuse-lite": "^1.0.30001254",
         "case-sensitive-paths-webpack-plugin": "2.2.0",
         "css-loader": "2.1.1",
         "dotenv": "6.2.0",
@@ -99,7 +101,12 @@
         "webpack": "4.41.0",
         "webpack-dev-server": "3.2.1",
         "webpack-manifest-plugin": "2.1.1",
-        "workbox-webpack-plugin": "4.3.1"
+        "workbox-webpack-plugin": "4.3.1",
+        "@material-ui/core": "^4.12.3",
+        "@mui/x-data-grid-generator": "^4.0.0",
+        "@mui/x-data-grid": "^4.0.0",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.60"
     },
     "scripts": {
         "start": "node scripts/start.js dev",
