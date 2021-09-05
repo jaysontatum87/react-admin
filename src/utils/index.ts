@@ -13,5 +13,10 @@ export function parseQuery() {
  * 校验是否登录
  * @param permits
  */
-export const checkLogin = (permits: any): boolean =>
-    (process.env.NODE_ENV === 'production' && !!permits) || process.env.NODE_ENV === 'development';
+export const checkLogin = (permits: any): boolean => {
+    console.log('process.env.NODE_ENV:', process.env.NODE_ENV);
+    return (
+        (process.env.NODE_ENV === 'production' && !!permits) ||
+        process.env.NODE_ENV === 'development'
+    );
+};

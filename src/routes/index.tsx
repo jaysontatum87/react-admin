@@ -16,6 +16,7 @@ type CRouterProps = {
 
 const CRouter = (props: CRouterProps) => {
     const { auth } = props;
+    console.log('props:', auth);
     const [smenus] = useAlita({ smenus: null }, { light: true });
 
     const getPermits = (): any[] | null => {
@@ -29,6 +30,7 @@ const CRouter = (props: CRouterProps) => {
     const requireLogin = (component: React.ReactElement, permit: any) => {
         const permits = getPermits();
         if (!checkLogin(permits)) {
+            // if (checkLogin(permits)) {
             // 线上环境判断是否登录
             return <Redirect to={'/login'} />;
         }
